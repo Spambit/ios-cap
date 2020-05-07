@@ -1,0 +1,14 @@
+{
+  "appId": "sambit.test",
+  "appName": "capApp",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist/capApp",
+  "server": {
+    "iosScheme": "hyland-mobile",
+    "allowNavigation": [
+      "localhost"
+    ]
+  },
+  "cordova": {}
+}

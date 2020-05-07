@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CapApp</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1 viewport-fit=cover">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<style>
+    body {
+      padding:
+        env(safe-area-inset-top, 20px)
+        env(safe-area-inset-right, 20px)
+        env(safe-area-inset-bottom, 20px)
+        env(safe-area-inset-left, 20px);
+    }
+    .button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      width: calc(100% - 30px);
+      margin: 15px;
+    }
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */
+.button5 {background-color: #555555;} /* Black */
+</style>
+<body>
+  <app-root></app-root>
+<script>
+    function testCap() {
+        window.Capacitor.Plugins.MyCapWebview.loadApp({webapp: 'mobile'})
+    }
+</script>
+<button class="button button5" onclick='testCap()'>Load A webapp</button>
+</body>
+</html>
